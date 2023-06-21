@@ -1,6 +1,6 @@
 # Crypto Portfolio
 
-For this assignment, the goal was to create a portfolio page, where users can see their assets and add new assets, in a clean UI/UX. Functionality was priority over design. I had 3 to 4 hours to start and finish this assignment, so a few things I could only point out the way with comments, but the Portfolio is functional and uses real data from Coin Gecko.
+For this assignment, the goal was to create a portfolio page, where users can see their assets and add new assets, in a clean UI/UX. Functionality was priority over design. I had a limited amount of time to start and finish this assignment, so a few things I could only point out the way with comments, but the Portfolio is functional and uses real data from Coin Gecko.
 
 ![Screenshot 2023-06-21 at 12 33 09](https://github.com/jessikadg/crypto-portfolio/assets/48770521/1a661cb5-eb30-430c-a356-0da166cbed41)
 
