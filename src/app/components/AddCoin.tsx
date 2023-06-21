@@ -24,10 +24,10 @@ export default function AddCoin(props: { assets: Asset[]; setAssets: any }) {
     }
   }
 
-  function handleSubmit(e: any) {
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     setInputError(false);
 
-    e.preventDefault();
+    event.preventDefault();
 
     const updateAmountOnExistingAsset = () => {
       const selectedAsset = assets.find((asset) => asset.name === coinInput);
@@ -41,7 +41,6 @@ export default function AddCoin(props: { assets: Asset[]; setAssets: any }) {
       setAssets(updatedAssets);
 
       // Re-fetch the coin values in EUR here would also be necessary to keep the portfolio up to date after submitting. Due to time constraints, this couldn't be implemented.
-
       setAmountInput(0);
       setCoinInput("");
     };

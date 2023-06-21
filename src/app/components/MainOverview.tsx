@@ -1,7 +1,7 @@
 "use client";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Asset } from "../types/Asset";
+import { CoinData } from "../types/CoinData";
 import AssetListItem from "./AssetListItem";
 import Portfolio from "./Portfolio";
 import AddCoin from "./AddCoin";
@@ -25,13 +25,13 @@ export default function MainOverview() {
 
   useEffect(() => {
     const stringOfAssets = assets
-      .map((asset: any) => asset.name.toString())
+      .map((asset: Asset) => asset.name.toString())
       .join("%2C%20");
 
     const getCoinData = async () => {
       try {
         const response = await FetchData(stringOfAssets).then((data) =>
-          data.map((coin: any) => coin.current_price)
+          data.map((coin: CoinData) => coin.current_price)
         );
 
         updateAssetsValue(response);
